@@ -1,3 +1,3 @@
 # linear-algebra
 
-A collection of programs I have written in my spare time.
+A collection of programs I have written with my friends in my spare time.
