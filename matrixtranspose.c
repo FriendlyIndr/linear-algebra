@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+void printmat(int m, int n, int a[m][n]);
+
 int main() {
     int m, n;
     printf("Enter the number of rows: ");
@@ -16,12 +18,7 @@ int main() {
     }
 
     printf("\nEntered matrix:\n");
-    for(int i=0; i<m; i++) {
-        for(int j=0; j<n; j++) {
-            printf("%d ", a[i][j]);
-        }
-        printf("\n");
-    }
+    printmat(m, n, a);
 
     int b[n][m];
 
@@ -32,14 +29,17 @@ int main() {
     }
 
     printf("Transpose of matrix:\n");
-    for(int j=0; j<n; j++) {
-        for(int i=0; i<m; i++) {
-            printf("%d ", b[j][i]);
-        }
-        printf("\n");
-    }
+    printmat(n, m, b);
 
     return 0;
 }
 
-
+void printmat(int m, int n,int a[m][n]) {
+    for(int i=0; i<m; i++) {
+        for(int j=0; j<n; j++) {
+            printf("%d ", a[i][j]);
+        }
+        printf("\n");
+    }
+    return;
+}
