@@ -48,3 +48,5 @@ int main() {
     printf("\nThe most frequently occurring element is %d, occurring %d times.", maxoccur, maxcount);
     return 0;
 }
+
+// Note: The program does not account for ties between elements.
